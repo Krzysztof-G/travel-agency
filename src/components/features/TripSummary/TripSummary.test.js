@@ -20,12 +20,15 @@ describe('Component TripSummary', () => {
   });
   it('render correct name, days, cost', () => {
     const expectedName = 'Lorem ipsum ';
+    const expectedDays = 7;
 
 
-    const component = shallow(<TripSummary name={expectedName} tags={[]} />);
+    const component = shallow(<TripSummary name={expectedName} days={expectedDays} tags={[]} />);
 
     const renderedName = component.find('.title').text();
     expect(renderedName).toEqual(expectedName);
+    const renderDays = component.find('.details span').first().text();
+    expect(renderDays).toEqual(expectedDays);
 
   });
 
