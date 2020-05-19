@@ -11,10 +11,22 @@ describe('Component TripSummary', () => {
   });
   it('check correct src and alt of image', () => {
     const expectedSrc = 'image.jpg';
-    const expectedAlt = 'photo';
+    const expectedAlt = 'description';
 
     const component = shallow(<TripSummary image={expectedSrc} name={expectedAlt} tags={[]} />);
 
-    expect(component.find('.img').prop('src')).toEqual(`/trip/${expectedSrc}`);
+    expect(component.find('img').prop('src')).toEqual(expectedSrc);
+    expect(component.find('img').prop('alt')).toEqual(expectedAlt);
   });
+  it('render correct name, days, cost', () => {
+    const expectedName = 'Lorem ipsum ';
+
+
+    const component = shallow(<TripSummary name={expectedName} tags={[]} />);
+
+    const renderedName = component.find('.title').text();
+    expect(renderedName).toEqual(expectedName);
+
+  });
+
 });
