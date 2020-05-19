@@ -4,11 +4,13 @@ import TripSummary from './TripSummary';
 
 
 describe('Component TripSummary', () => {
+
   it('should generated link to correct address', () => {
     const expectedId = 'abc';
     const component = shallow(<TripSummary id={expectedId} tags={[]} />);
     expect(component.find('.link').prop('to')).toEqual(`/trip/${expectedId}`);
   });
+
   it('check correct src and alt of image', () => {
     const expectedSrc = 'image.jpg';
     const expectedAlt = 'description';
@@ -18,18 +20,24 @@ describe('Component TripSummary', () => {
     expect(component.find('img').prop('src')).toEqual(expectedSrc);
     expect(component.find('img').prop('alt')).toEqual(expectedAlt);
   });
+
   it('render correct name, days, cost', () => {
     const expectedName = 'Lorem ipsum ';
     const expectedDays = 7;
+    const expectedCost = '100$';
 
 
-    const component = shallow(<TripSummary name={expectedName} days={expectedDays} tags={[]} />);
+    const component = shallow(<TripSummary name={expectedName} days={expectedDays} cost={expectedCost} tags={[]} />);
 
     const renderedName = component.find('.title').text();
     expect(renderedName).toEqual(expectedName);
     const renderDays = component.find('.details span').first().text();
-    expect(renderDays).toEqual(expectedDays);
-
+    expect(renderDays).toEqual(`${expectedDays} days`);
+    const renderCost = component.find('.details span').last().text();
+    expect(renderCost).toEqual(`from ${expectedCost}`);
   });
 
+  it('should throw error without any props', () => {
+    expect(() => shallow(<TripSummary />)).toThrow();
+  });
 });
