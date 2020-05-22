@@ -4,7 +4,7 @@ import OrderOption from './OrderOption';
 import DatePicker from 'react-datepicker';
 
 
-describe('Component Hero', () => {
+describe('Component OrderOption', () => {
   it('should render without crashing', () => {
     const expectedType = 'text';
     const expectedName = 'John';
