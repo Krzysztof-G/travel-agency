@@ -121,9 +121,9 @@ describe('Component OrderOption', () => {
           });
 
           it('should run setOrderOption function on click into last div', () => {
-            renderedSubcomponent.find('div .icon').simulate('click');
+            renderedSubcomponent.find('.icon').at(2).simulate('click');
             expect(mockSetOrderOption).toBeCalledTimes(1);
-            expect(mockSetOrderOption).toBeCalledWith({ [mockProps.id]: testValue });
+            expect(mockSetOrderOption).toBeCalledWith({[mockProps.id]: testValue});
           });
 
           break;
