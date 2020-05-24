@@ -1,0 +1,104 @@
+{
+  "orders": [
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "name": "",
+      "contact": "",
+      "start-date": "",
+      "totalCost": "$51,381",
+      "id": 1
+    },
+    {
+      "car-rental": "luxury",
+      "accommodation": "suite",
+      "features": [
+        "kitchen",
+        "all-inclusive",
+        "pool",
+        "security"
+      ],
+      "adults": 1,
+      "children": 0,
+      "name": "Chris",
+      "contact": "",
+      "start-date": "",
+      "totalCost": "$55,881",
+      "id": 2
+    },
+    {
+      "car-rental": "luxury",
+      "accommodation": "house",
+      "features": [
+        "all-inclusive",
+        "security"
+      ],
+      "adults": "2",
+      "children": "3",
+      "name": "Chris",
+      "contact": "123-456-789",
+      "start-date": "2020-05-31T22:00:00.000Z",
+      "totalCost": "$192,083",
+      "id": 3
+    },
+    {
+      "car-rental": "suv",
+      "accommodation": "house",
+      "features": [
+        "all-inclusive",
+        "pool",
+        "security"
+      ],
+      "adults": "3",
+      "children": "2",
+      "name": "Chris",
+      "contact": "123-456-789",
+      "start-date": "2020-06-03T22:00:00.000Z",
+      "totalCost": "$575,193",
+      "tripName": "Marvelous travel in fantastic Timor-Leste",
+      "tripId": "5cc1d1014c75f672e46ef6d7",
+      "countryCode": "Timor-Leste",
+      "id": 4
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [
+        "all-inclusive",
+        "pool",
+        "security",
+        "all-inclusive"
+      ],
+      "adults": "2",
+      "children": "4",
+      "name": "Anna",
+      "contact": "111-222-333",
+      "start-date": "2020-06-26T22:00:00.000Z",
+      "totalCost": "$532,405",
+      "tripName": "Marvelous foray in brilliant Tokelau",
+      "tripId": "5cc1d1011736309a788fd36d",
+      "countryCode": "Tokelau",
+      "id": 5
+    },
+    {
+      "car-rental": "luxury",
+      "accommodation": "house",
+      "features": [
+        "all-inclusive"
+      ],
+      "adults": 1,
+      "children": 0,
+      "name": "Andy",
+      "contact": "999-999-999",
+      "start-date": "2020-05-13T22:00:00.000Z",
+      "totalCost": "$25,443",
+      "tripName": "Sensational expedition in fine Zambia",
+      "tripId": "5cc1d101bdf33c2d65ee7184",
+      "countryCode": "Zambia",
+      "id": 6
+    }
+  ]
+}
