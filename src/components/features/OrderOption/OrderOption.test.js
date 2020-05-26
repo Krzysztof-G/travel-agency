@@ -10,7 +10,7 @@ describe('Component OrderOption', () => {
     const expectedName = 'John';
     const component = shallow(<OrderOption type={expectedType} name={expectedName} />);
     expect(component).toBeTruthy();
-    console.log(component.debug());
+    // console.log(component.debug());
   });
 
   it('should return empty object if called without required props', () => {
